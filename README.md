@@ -1,6 +1,8 @@
 # Nav Mesh Avoidance
 Custom Nav Mesh Avoidance to replace default one. 
 
+![Nav Mesh Avoidance](https://media3.giphy.com/media/cA3Xxd4CnB9TBoIMtG/giphy.gif)
+
 This is simple avoidance implementation to prevent situation when nav mesh agents moving too close to each other. This algorithm is best suitable for average crowds of 10-100 agents. 
 Not tested with bigger amounts.
 
