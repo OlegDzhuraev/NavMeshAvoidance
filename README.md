@@ -13,13 +13,16 @@ using NavMeshAvoidance;
 using UnityEngine;
 using UnityEngine.AI;
 
-public Avoidance Avoidance;
-
-void Start()
+public class AvoidingAgent : MonoBehaviour
 {
-  var agent = GetComponent<NavMeshAgent>();
-  
-  Avoidance.AddAgent(agent);
+  public Avoidance Avoidance;
+
+  void Start()
+  {
+    var agent = GetComponent<NavMeshAgent>();
+
+    Avoidance.AddAgent(agent);
+  }
 }
 ```
 
