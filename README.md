@@ -41,10 +41,3 @@ Basic classes added as controls example for agents groups. You can ignore these 
 
 ## Example
 Check SampleScene to see **Avoidance** work example.
-
-## Donate
-You can support development using cryptocurrency :)
-
-**Zilliqa $ZIL (ZIL):** zil1p6j0js2d5dat36n9zpp4g9xj776vghukkaa32l
-
-**Stellar Lumens (XLM):** GBY4Q6AKWLQIOT37D3X643LLEVZA7WRWBUU4RCVEG6PN57QCIWT7LRIX
