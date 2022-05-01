@@ -6,6 +6,8 @@ namespace NavMeshAvoidance
 {
     public sealed class Ordering : MonoBehaviour
     {
+        public Avoidance Avoidance { get; set; }
+        
         readonly List<NavMeshAgent> controlledAgents = new List<NavMeshAgent>();
         readonly IFormation formation = new SquareFormation();
       
@@ -26,8 +28,14 @@ namespace NavMeshAvoidance
         
         void GiveOrder(Vector3 position)
         {
-            var doubleRadius = controlledAgents[0].radius * 2;
-            var positions = formation.GetPositions(position, controlledAgents.Count, doubleRadius);
+            if (controlledAgents.Count <= 0)
+                return;
+            
+            var distance = controlledAgents[0].radius * 2;
+            if (Avoidance)
+                distance *= Avoidance.Distance;
+            
+            var positions = formation.GetPositions(position, controlledAgents.Count, distance);
            
             for (var i = 0; i < controlledAgents.Count; i++)
                 controlledAgents[i].SetDestination(positions[i]);
