@@ -6,6 +6,8 @@ Custom Nav Mesh Avoidance to replace default one.
 This is simple avoidance implementation to prevent situation when nav mesh agents moving too close to each other. This algorithm is best suitable for average crowds of 10-100 agents. 
 Not tested with bigger amounts.
 
+You can combine this Avoidance with default one (agents will never move through each other) or disable Unity's avoidance (avoidance will look smoother, but agents will be able to move through each other).
+
 ## How to use
 First of all, add **Avoidance** component to any GameObject (once). Next, when you spawn any agent, you need to add it to the Avoidance class like this:
 ```cs
