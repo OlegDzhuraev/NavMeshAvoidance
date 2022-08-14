@@ -1,6 +1,6 @@
 {
     "name": "com.insaneone.avoidance",
-    "author": "InsaneOne",
+    "author": "Oleg Dzhuraev",
     "displayName": "Nav Mesh Avoidance",
     "description": "Nav Mesh Avoidance implementation for Unity (C#) to replace default one. MIT License.",
     "unity": "2019.1",
@@ -14,6 +14,6 @@
     "dependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/InsaneOneHub/NavMeshAvoidance.git"
+        "url": "https://github.com/OlegDzhuraev/NavMeshAvoidance.git"
     }
 }
