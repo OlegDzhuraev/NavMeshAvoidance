@@ -8,6 +8,15 @@ Not tested with bigger amounts.
 
 You can combine this Avoidance with default one (agents will never move through each other) or disable Unity's avoidance (avoidance will look smoother, but agents will be able to move through each other).
 
+## How to install
+You can install plugin via Unity Package Manager as git package from github repository:
+
+```
+https://github.com/OlegDzhuraev/NavMeshAvoidance.git
+```
+
+You also can download it directly from github and place into Assets folder.
+
 ## How to use
 First of all, add **Avoidance** component to any GameObject (once). Next, when you spawn any agent, you need to add it to the Avoidance class like this:
 ```cs
