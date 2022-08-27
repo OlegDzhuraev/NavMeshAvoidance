@@ -26,7 +26,7 @@ using UnityEngine.AI;
 
 public class AvoidingAgent : MonoBehaviour
 {
-  public Avoidance Avoidance;
+  [SerializeField] Avoidance Avoidance;
 
   void Start()
   {
