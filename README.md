@@ -3,13 +3,14 @@ Custom Nav Mesh Avoidance to replace default one.
 
 ![Nav Mesh Avoidance](https://media3.giphy.com/media/cA3Xxd4CnB9TBoIMtG/giphy.gif)
 
-This is simple avoidance implementation to prevent situation when nav mesh agents moving too close to each other. 
+This is a simple avoidance implementation, which allows to prevent situation with NavMesh agents moving too close to each other - they trying to move using optimal path, but it just looks weird. 
+
+You can combine this Avoidance with default one (agents will never move through each other) or disable Unity's avoidance (avoidance will look smoother, but agents will be able to move through each other).
 
 If `Use Spatial Hash` parameter enabled, algorithm works fine with up to `~1024` agents. 
 
 If not, algorithm works fine only for small amount of agents, like `10-100`. 
 
-You can combine this Avoidance with default one (agents will never move through each other) or disable Unity's avoidance (avoidance will look smoother, but agents will be able to move through each other).
 
 ## How to install
 You can install plugin via Unity Package Manager as git package from github repository:
