@@ -5,7 +5,7 @@ Custom Nav Mesh Avoidance to replace default one.
 
 This is simple avoidance implementation to prevent situation when nav mesh agents moving too close to each other. 
 
-If `Use Spatial Hash` parameter enabled, algorithm works fine with up to `~512` agents. 
+If `Use Spatial Hash` parameter enabled, algorithm works fine with up to `~1024` agents. 
 
 If not, algorithm works fine only for small amount of agents, like `10-100`. 
 

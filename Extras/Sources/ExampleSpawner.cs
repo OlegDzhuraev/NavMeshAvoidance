@@ -8,7 +8,7 @@ namespace NavMeshAvoidance
     {
         [Header("Testing settings")]
         [SerializeField] GameObject agentPrefab;
-        [SerializeField, Range(2, 512)] int count = 16;
+        [SerializeField, Range(2, 1024)] int count = 16;
         
         [Header("Components links")]
         [SerializeField] Ordering ordering;
