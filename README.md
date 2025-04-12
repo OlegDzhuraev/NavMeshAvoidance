@@ -22,7 +22,7 @@ https://github.com/OlegDzhuraev/NavMeshAvoidance.git
 You also can download it directly from github and place into Assets folder.
 
 ## How to use
-First of all, add **Avoidance** component to any GameObject (once). Next, when you spawn any agent, you need to add it to the Avoidance class like this:
+First of all, add **Avoidance** component to any GameObject on scene(once). Next, when you spawn any agent, you need to add it to the **Avoidance** class like this:
 ```cs
 using NavMeshAvoidance;
 using UnityEngine;
@@ -30,22 +30,22 @@ using UnityEngine.AI;
 
 public class AvoidingAgent : MonoBehaviour
 {
-  [SerializeField] Avoidance Avoidance;
+  [SerializeField] Avoidance avoidance;
 
   void Start()
   {
     var agent = GetComponent<NavMeshAgent>();
 
-    Avoidance.AddAgent(agent);
+    avoidance.AddAgent(agent);
   }
 }
 ```
 
-And now it will work with avoidance of others agents. 
+And now this agent will avoid the other added agents.
 
-You also can disable default avoidance. In this case agents will sometimes move through each other, but in priority for them will be to avoid others. Idea of disabling default avoidance is better navigation without "friction", which can be noticed when using default avoidance and 2 or more agents try to move through other one.
+You also can disable default Unity avoidance. In this case agents will sometimes move through each other, but in priority for them will be to avoid others. Idea of disabling default avoidance is better navigation without "friction", which can be noticed when using default avoidance and 2 or more agents try to move through other one.
 
-When destroying any agent, dont forget to remove it from avoidance too:
+When **destroying** any agent, dont forget to **remove it from avoidance** too:
 
 ```cs
 Avoidance.RemoveAgent(agent);
@@ -55,4 +55,7 @@ Avoidance.RemoveAgent(agent);
 Basic classes added as controls example for agents groups. You can ignore these scripts if you have your own group controls.
 
 ## Example
-Check SampleScene to see **Avoidance** work example.
+Check **SampleScene** to see **Avoidance** work example.
+
+## Additional info
+If you need a more accurate, comprehensive and advanced solution, I recommend you to study the **RVO2 algorithm** - https://github.com/snape/RVO2-CS.
