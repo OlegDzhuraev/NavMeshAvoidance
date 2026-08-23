@@ -1,3 +1,5 @@
+![GitHub License](https://img.shields.io/github/license/OlegDzhuraev/NavMeshAvoidance) ![Static Badge](https://img.shields.io/badge/unity%20version-2022%2B-blue)
+
 # Nav Mesh Avoidance
 Custom Nav Mesh Avoidance to replace default one. 
 
